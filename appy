@@ -1,0 +1,23 @@
+import streamlit as st
+
+# Page ki setting
+st.set_page_config(page_title="ZORA AI", page_icon="🤖")
+
+# Interface Design
+st.title("🤖 Welcome to ZORA AI")
+st.markdown("### Aapka Personal Smart Assistant")
+st.write("Main ZORA AI hoon, jo Gemini aur GPT ki power se chalta hoon. Main aapki coding, likhne aur sawalon ke jawab dene mein madad kar sakta hoon.")
+
+# Divider
+st.markdown("---")
+
+# Bot Button
+st.info("ZORA AI ke saath chat shuru karne ke liye niche button par click karein:")
+bot_link = "https://poe.com/invite/9c5feaaa5fa7499585fe9e3030ba903f"
+
+# Green button jo Poe par le jayega
+st.link_button("🚀 Start Chatting with ZORA AI", bot_link)
+
+# Footer
+st.markdown("---")
+st.caption("Powered by Gemini & GPT-5.3-Instant | Developed by Hadi")
