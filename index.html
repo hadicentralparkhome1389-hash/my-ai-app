@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hadi Pro AI</title>
+    <style>
+        body { background: #0f172a; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #1e293b; padding: 2rem; border-radius: 15px; border: 1px solid #38bdf8; text-align: center; width: 350px; }
+        input { width: 80%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none; }
+        button { background: #38bdf8; color: black; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Hadi Pro AI 🤖</h2>
+        <div id="display">Puchiye kya puchna hai?</div>
+        <input type="text" id="msg" placeholder="Type here...">
+        <button onclick="show()">Send</button>
+    </div>
+    <script>
+        function show() {
+            let val = document.getElementById('msg').value;
+            document.getElementById('display').innerText = "Aapne kaha: " + val;
+        }
+    </script>
+</body>
+</html>
